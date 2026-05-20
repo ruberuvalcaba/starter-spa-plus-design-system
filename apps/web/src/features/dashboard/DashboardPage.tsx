@@ -1,4 +1,4 @@
-import { Stack } from "@acme/ui";
+import { Stack } from "@ruflas/ui";
 import { useAuthStore } from "../../stores/authStore";
 
 export function DashboardPage() {
@@ -6,8 +6,13 @@ export function DashboardPage() {
   return (
     <Stack gap="md">
       <h1>Dashboard</h1>
-      <p>{user ? `Signed in as ${user.email}` : "You are browsing as guest."}</p>
-      <p>This SPA uses TanStack Router, TanStack Query, Zustand, and the @acme/ui design system.</p>
+      <p>
+        {user ? `Signed in as ${user.email}` : "You are browsing as guest."}
+      </p>
+      <p>
+        This SPA uses TanStack Router, TanStack Query, Zustand, and the
+        @ruflas/ui design system.
+      </p>
     </Stack>
   );
 }

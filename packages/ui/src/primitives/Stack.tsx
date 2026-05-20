@@ -14,6 +14,7 @@ export interface StackProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export function Stack({ gap = "md", ...rest }: StackProps) {
-  const g = gap === "sm" ? styles.gapSm : gap === "lg" ? styles.gapLg : styles.gapMd;
+  const g =
+    gap === "sm" ? styles.gapSm : gap === "lg" ? styles.gapLg : styles.gapMd;
   return <div {...rest} {...stylex.props(styles.base, g)} />;
 }

@@ -8,12 +8,12 @@
     "lint": "biome check .storybook"
   },
   "dependencies": {
-    "@acme/ui": "workspace:*",
+    "@ruflas/ui": "workspace:*",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@acme/tsconfig": "workspace:*",
+    "@ruflas/tsconfig": "workspace:*",
     "@stylexjs/babel-plugin": "^0.10.1",
     "@storybook/addon-essentials": "^8.4.7",
     "@storybook/react": "^8.4.7",

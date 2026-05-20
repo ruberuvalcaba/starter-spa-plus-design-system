@@ -1,4 +1,4 @@
-import { Button, Input, Stack } from "@acme/ui";
+import { Button, Input, Stack } from "@ruflas/ui";
 import { useNavigate } from "@tanstack/react-router";
 import { type FormEvent, useState } from "react";
 import { useAuthStore } from "../../stores/authStore";

@@ -36,9 +36,9 @@ pnpm lint             # biome
 ```
 apps/
   web/          # SPA (TanStack Router + Query + Zustand)
-  storybook/    # Storybook for @acme/ui
+  storybook/    # Storybook for @ruflas/ui
 packages/
-  ui/           # Design system (@acme/ui) – StyleX components
+  ui/           # Design system (@ruflas/ui) – StyleX components
   tsconfig/     # Shared tsconfigs
 ```
 
@@ -137,7 +137,7 @@ starter-spa-design-system/
 
 1. Create `packages/ui/src/components/MyComp/` with `MyComp.tsx`, `MyComp.styles.ts`, `MyComp.test.tsx`, `MyComp.stories.tsx`, `index.ts`.
 2. Re-export from `packages/ui/src/index.ts`.
-3. Use in `apps/web` via `import { MyComp } from "@acme/ui"`.
+3. Use in `apps/web` via `import { MyComp } from "@ruflas/ui"`.
 
 ## Releasing
 

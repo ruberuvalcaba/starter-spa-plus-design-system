@@ -1,1 +1,10 @@
-{ "name": "@acme/tsconfig", "version": "0.0.0", "private": true, "files": ["base.json", "react-library.json", "vite-app.json"] }
+{
+  "name": "@ruflas/tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "base.json",
+    "react-library.json",
+    "vite-app.json"
+  ]
+}

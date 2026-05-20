@@ -20,26 +20,44 @@ export const styles = stylex.create({
     transitionDuration: "120ms",
     userSelect: "none",
   },
-  size: {
-    sm: { fontSize: fontSize.sm, paddingBlock: space.xs, paddingInline: space.md },
-    md: { fontSize: fontSize.md, paddingBlock: space.sm, paddingInline: space.lg },
-    lg: { fontSize: fontSize.lg, paddingBlock: space.md, paddingInline: space.xl },
+
+  sm: {
+    fontSize: fontSize.sm,
+    paddingBlock: space.xs,
+    paddingInline: space.md,
   },
-  variant: {
-    primary: {
-      backgroundColor: { default: colors.primary, ":hover": colors.primaryHover },
-      color: colors.primaryFg,
-      borderColor: colors.primary,
+
+  md: {
+    fontSize: fontSize.md,
+    paddingBlock: space.sm,
+    paddingInline: space.lg,
+  },
+
+  lg: {
+    fontSize: fontSize.lg,
+    paddingBlock: space.md,
+    paddingInline: space.xl,
+  },
+
+  primary: {
+    backgroundColor: colors.primary,
+    color: colors.primaryFg,
+    borderColor: colors.primary,
+
+    ":hover": {
+      backgroundColor: colors.primaryHover,
     },
-    secondary: {
-      backgroundColor: colors.bg,
-      color: colors.fg,
-      borderColor: colors.border,
-    },
-    ghost: {
-      backgroundColor: "transparent",
-      color: colors.fg,
-      borderColor: "transparent",
-    },
+  },
+
+  secondary: {
+    backgroundColor: colors.bg,
+    color: colors.fg,
+    borderColor: colors.border,
+  },
+
+  ghost: {
+    backgroundColor: "transparent",
+    color: colors.fg,
+    borderColor: "transparent",
   },
 });

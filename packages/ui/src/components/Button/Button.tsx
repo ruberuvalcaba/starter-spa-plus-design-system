@@ -20,7 +20,7 @@ export function Button({
     <button
       type={type}
       {...props}
-      {...stylex.props(styles.base, styles.size[size], styles.variant[variant])}
+      {...stylex.props(styles.base, styles[size], styles[variant])}
     />
   );
 }

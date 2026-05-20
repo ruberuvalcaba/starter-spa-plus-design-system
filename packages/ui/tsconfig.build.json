@@ -1,5 +1,5 @@
 {
-  "extends": "@acme/tsconfig/react-library.json",
+  "extends": "@ruflas/tsconfig/react-library.json",
   "compilerOptions": {
     "outDir": "dist",
     "emitDeclarationOnly": true,

@@ -1,4 +1,4 @@
-import { Stack } from "@acme/ui";
+import { Stack } from "@ruflas/ui";
 import { useUsers } from "../../hooks/useUsers";
 
 export function UsersPage() {

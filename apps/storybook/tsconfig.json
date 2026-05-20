@@ -1,4 +1,4 @@
 {
-  "extends": "@acme/tsconfig/vite-app.json",
+  "extends": "@ruflas/tsconfig/vite-app.json",
   "include": [".storybook"]
 }
