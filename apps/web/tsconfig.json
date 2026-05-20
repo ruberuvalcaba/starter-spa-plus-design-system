@@ -1,0 +1,9 @@
+{
+  "extends": "@acme/tsconfig/vite-app.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "@/*": ["./src/*"] }
+  },
+  "include": ["src", "tests"],
+  "references": [{ "path": "../../packages/ui" }]
+}

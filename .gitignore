@@ -1,0 +1,12 @@
+node_modules
+dist
+.turbo
+storybook-static
+.vite
+*.log
+.DS_Store
+.env
+.env.local
+playwright-report
+test-results
+coverage
