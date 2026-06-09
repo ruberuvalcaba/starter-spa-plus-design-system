@@ -10,7 +10,7 @@ export function DashboardPage() {
         {user ? `Signed in as ${user.email}` : "You are browsing as guest."}
       </p>
       <p>
-        This SPA uses TanStack Router, TanStack Query, Zustand, and the
+        This SPA sample uses TanStack Router, TanStack Query, Zustand, and the
         @ruflas/ui design system.
       </p>
     </Stack>

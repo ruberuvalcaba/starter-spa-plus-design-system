@@ -10,12 +10,12 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: ButtonSize;
 }
 
-export function Button({
+export const Button = ({
   variant = "primary",
   size = "md",
   type = "button",
   ...props
-}: ButtonProps) {
+}: ButtonProps) => {
   return (
     <button
       type={type}
@@ -24,3 +24,5 @@ export function Button({
     />
   );
 }
+
+Button.displayName = "Button";

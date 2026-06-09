@@ -1,6 +1,6 @@
 import { Button, Input, Stack } from "@ruflas/ui";
 import { useNavigate } from "@tanstack/react-router";
-import { type FormEvent, useState } from "react";
+import { type SubmitEvent, useState } from "react";
 import { useAuthStore } from "../../stores/authStore";
 
 export function LoginPage() {
@@ -8,7 +8,7 @@ export function LoginPage() {
   const login = useAuthStore((s) => s.login);
   const navigate = useNavigate();
 
-  function onSubmit(e: FormEvent) {
+  function onSubmit(e: SubmitEvent) {
     e.preventDefault();
     if (!email) return;
     login(email);
@@ -17,7 +17,7 @@ export function LoginPage() {
 
   return (
     <form onSubmit={onSubmit}>
-      <Stack gap="md">
+      <Stack gap="lg">
         <h1>Login</h1>
         <Input
           type="email"
@@ -25,7 +25,9 @@ export function LoginPage() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <Button type="submit">Sign in</Button>
+        <Button type="submit" disabled={!email} variant="primary">
+          Sign in
+        </Button>
       </Stack>
     </form>
   );
